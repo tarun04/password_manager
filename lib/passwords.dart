@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Passwords extends StatelessWidget {
@@ -54,8 +53,8 @@ class Passwords extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ListView.builder(
+    return Container(
+      child: ListView.builder(
         itemCount: accounts.length,
         itemBuilder: (context, index) {
           return AccountWidget(accounts[index]);

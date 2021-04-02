@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:password_manager/home.dart';
+import 'package:password_manager/app.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Google password manager',
-      home: Home()
+      home: App()
     );
   }
 }
