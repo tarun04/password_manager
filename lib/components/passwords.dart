@@ -1,53 +1,55 @@
 import 'package:flutter/material.dart';
+import 'package:password_manager/entities/account.dart';
+import 'package:password_manager/entities/password.dart';
 
 class Passwords extends StatelessWidget {
-  final List<AccountModel> accounts = [
-    new AccountModel(1, 'amazon.com', 'https://www.amazon.com/favicon.ico', [
-      new PasswordDetailsModel(1, 1, 'web', 'www.amazon.com', 'username', 'password')
+  final List<Account> accounts = [
+    new Account(1, 'amazon.com', 'https://www.amazon.com/favicon.ico', [
+      new Password(1, 1, 'web', 'www.amazon.com', 'username', 'password')
     ]),
-    new AccountModel(2, 'americanexpress.com', 'https://www.americanexpress.com/favicon.ico', [
-      new PasswordDetailsModel(2, 2, 'web', 'online.americanexpress.com', 'username', 'password')
+    new Account(2, 'americanexpress.com', 'https://www.americanexpress.com/favicon.ico', [
+      new Password(2, 2, 'web', 'online.americanexpress.com', 'username', 'password')
     ]),
-    new AccountModel(3, 'BestBuy', 'https://www.bestbuy.com/favicon.ico', [
-      new PasswordDetailsModel(3, 3, 'web', 'www.bestbuy.com', 'username', 'password')
+    new Account(3, 'BestBuy', 'https://www.bestbuy.com/favicon.ico', [
+      new Password(3, 3, 'web', 'www.bestbuy.com', 'username', 'password')
     ]),
-    new AccountModel(4, 'github.com', 'https://www.github.com/favicon.ico', [
-      new PasswordDetailsModel(4, 4, 'web', 'www.github.com', 'username', 'password')
+    new Account(4, 'github.com', 'https://www.github.com/favicon.ico', [
+      new Password(4, 4, 'web', 'www.github.com', 'username', 'password')
     ]),
-    new AccountModel(5, 'Google', 'https://www.google.com/favicon.ico', [
-      new PasswordDetailsModel(5, 5, 'web', 'www.google.com', 'username', 'password'),
-      new PasswordDetailsModel(6, 5, 'app', 'Google', 'username', 'password'),
+    new Account(5, 'Google', 'https://www.google.com/favicon.ico', [
+      new Password(5, 5, 'web', 'www.google.com', 'username', 'password'),
+      new Password(6, 5, 'app', 'Google', 'username', 'password'),
     ]),
-    new AccountModel(6, 'grubhub.com', 'https://www.grubhub.com/favicon.ico', [
-      new PasswordDetailsModel(7, 6, 'app', 'GrubHub', 'username', 'password')
+    new Account(6, 'grubhub.com', 'https://www.grubhub.com/favicon.ico', [
+      new Password(7, 6, 'app', 'GrubHub', 'username', 'password')
     ]),
-    new AccountModel(7, 'hertz.com', 'https://www.hertz.com/favicon.ico', [
-      new PasswordDetailsModel(8, 7, 'web', 'www.hertz.com', 'username', 'password')
+    new Account(7, 'hertz.com', 'https://www.hertz.com/favicon.ico', [
+      new Password(8, 7, 'web', 'www.hertz.com', 'username', 'password')
     ]),
-    new AccountModel(8, 'Instagram', 'https://www.instagram.com/favicon.ico', [
-      new PasswordDetailsModel(9, 8, 'app', 'Instagram', 'username', 'password')
+    new Account(8, 'Instagram', 'https://www.instagram.com/favicon.ico', [
+      new Password(9, 8, 'app', 'Instagram', 'username', 'password')
     ]),
-    new AccountModel(9, 'Netflix', 'https://www.netflix.com/favicon.ico', [
-      new PasswordDetailsModel(10, 9, 'app', 'Netflix', 'username', 'password')
+    new Account(9, 'Netflix', 'https://www.netflix.com/favicon.ico', [
+      new Password(10, 9, 'app', 'Netflix', 'username', 'password')
     ]),
-    new AccountModel(10, 'Reddit', 'https://www.reddit.com/favicon.ico', [
-      new PasswordDetailsModel(11, 10, 'web', 'www.reddit.com', 'username', 'password'),
-      new PasswordDetailsModel(12, 10, 'app', 'Reddit', 'username', 'password'),
+    new Account(10, 'Reddit', 'https://www.reddit.com/favicon.ico', [
+      new Password(11, 10, 'web', 'www.reddit.com', 'username', 'password'),
+      new Password(12, 10, 'app', 'Reddit', 'username', 'password'),
     ]),
-    new AccountModel(11, 'snapchat.com', 'https://www.snapchat.com/favicon.ico', [
-      new PasswordDetailsModel(13, 11, 'app', 'Snapchat', 'username', 'password')
+    new Account(11, 'snapchat.com', 'https://www.snapchat.com/favicon.ico', [
+      new Password(13, 11, 'app', 'Snapchat', 'username', 'password')
     ]),
-    new AccountModel(12, 'target.com', 'https://www.target.com/favicon.ico', [
-      new PasswordDetailsModel(14, 12, 'web', 'www.target.com', 'username', 'password')
+    new Account(12, 'target.com', 'https://www.target.com/favicon.ico', [
+      new Password(14, 12, 'web', 'www.target.com', 'username', 'password')
     ]),
-    new AccountModel(13, 'uber.com', 'https://www.uber.com/favicon.ico', [
-      new PasswordDetailsModel(15, 13, 'app', 'Uber', 'username', 'password')
+    new Account(13, 'uber.com', 'https://www.uber.com/favicon.ico', [
+      new Password(15, 13, 'app', 'Uber', 'username', 'password')
     ]),
-    new AccountModel(14, 'usps.com', 'https://www.usps.com/favicon.ico', [
-      new PasswordDetailsModel(16, 14, 'web', 'www.usps.com', 'username', 'password')
+    new Account(14, 'usps.com', 'https://www.usps.com/favicon.ico', [
+      new Password(16, 14, 'web', 'www.usps.com', 'username', 'password')
     ]),
-    new AccountModel(15, 'walmart.com', 'https://www.walmart.com/favicon.ico', [
-      new PasswordDetailsModel(17, 15, 'web', 'www.walmart.com', 'username', 'password')
+    new Account(15, 'walmart.com', 'https://www.walmart.com/favicon.ico', [
+      new Password(17, 15, 'web', 'www.walmart.com', 'username', 'password')
     ]),
   ];
 
@@ -67,9 +69,9 @@ class Passwords extends StatelessWidget {
 }
 
 class AccountWidget extends StatelessWidget {
-  final AccountModel accountModel;
+  final Account account;
 
-  AccountWidget(this.accountModel);
+  AccountWidget(this.account);
 
   @override
   Widget build(BuildContext context) {
@@ -78,19 +80,19 @@ class AccountWidget extends StatelessWidget {
       leading: Padding(
         padding: EdgeInsets.all(10),
         child: Image.network(
-          accountModel.iconUrl,
+          account.iconUrl,
           fit: BoxFit.fill,
           alignment: Alignment.center,
           width: 30,
           height: 30,
         ),
       ),
-      title: Text(accountModel.account),
-      subtitle: accountModel.passwords.length > 1 ? Text(accountModel.passwords.length.toString() + ' Accounts') : null,
+      title: Text(account.account),
+      subtitle: account.passwords.length > 1 ? Text(account.passwords.length.toString() + ' Accounts') : null,
       onTap: () => {
         Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => AccountDetailsWidget(accountModel))
+            MaterialPageRoute(builder: (context) => AccountDetailsWidget(account))
         )
       },
     );
@@ -98,9 +100,9 @@ class AccountWidget extends StatelessWidget {
 }
 
 class AccountDetailsWidget extends StatelessWidget {
-  final AccountModel accountModel;
+  final Account account;
 
-  AccountDetailsWidget(this.accountModel);
+  AccountDetailsWidget(this.account);
 
   @override
   Widget build(BuildContext context) {
@@ -124,7 +126,7 @@ class AccountDetailsWidget extends StatelessWidget {
                       },
                     ),
                     Image.network(
-                      accountModel.iconUrl,
+                      account.iconUrl,
                       fit: BoxFit.fill,
                       alignment: Alignment.center,
                       width: 30,
@@ -133,7 +135,7 @@ class AccountDetailsWidget extends StatelessWidget {
                     SizedBox(
                       width: 15,
                     ),
-                    Text(accountModel.account)
+                    Text(account.account)
                   ],
                 ),
               ),
@@ -143,9 +145,9 @@ class AccountDetailsWidget extends StatelessWidget {
                   color: Colors.grey[800],
                   height: 45,
                 ),
-                itemCount: accountModel.passwords.length,
+                itemCount: account.passwords.length,
                 itemBuilder: (context, index) {
-                  return PasswordDetailsWidget(accountModel.passwords[index]);
+                  return PasswordDetailsWidget(account.passwords[index]);
                 },
                 shrinkWrap: true,
               ),
@@ -158,7 +160,7 @@ class AccountDetailsWidget extends StatelessWidget {
 }
 
 class PasswordDetailsWidget extends StatelessWidget {
-  final PasswordDetailsModel password;
+  final Password password;
 
   PasswordDetailsWidget(this.password);
 
@@ -295,35 +297,5 @@ class ControlsSection extends StatelessWidget {
         ],
       ),
     );
-  }
-}
-
-class AccountModel {
-  final int id;
-  final String account;
-  final String iconUrl;
-  final List<PasswordDetailsModel> passwords;
-
-  AccountModel(this.id, this.account, this.iconUrl, this.passwords);
-
-  @override
-  String toString() {
-    return '{id: $id, account: $account, iconUrl: $iconUrl, passwordCount: $passwords}';
-  }
-}
-
-class PasswordDetailsModel {
-  final int id;
-  final int accountId;
-  final String type;
-  final String typeName;
-  final String username;
-  final String password;
-
-  PasswordDetailsModel(this.id, this.accountId, this.type, this.typeName, this.username, this.password);
-
-  @override
-  String toString() {
-    return '{id: $id, accountDetailsId: $accountId, type: $type, typeName: $typeName, username: $username, password: $password}';
   }
 }
