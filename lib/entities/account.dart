@@ -15,7 +15,7 @@ class Account {
 }
 
 getAccounts() {
-  var accounts = [
+  var accounts = <Account>[
     new Account(1, 'amazon.com', 'https://www.amazon.com/favicon.ico', [
       new Password(1, 1, 'web', 'www.amazon.com', 'username', 'password')
     ]),
@@ -34,9 +34,6 @@ getAccounts() {
     ]),
     new Account(6, 'grubhub.com', 'https://www.grubhub.com/favicon.ico', [
       new Password(7, 6, 'app', 'GrubHub', 'username', 'password')
-    ]),
-    new Account(7, 'hertz.com', 'https://www.hertz.com/favicon.ico', [
-      new Password(8, 7, 'web', 'www.hertz.com', 'username', 'password')
     ]),
     new Account(8, 'Instagram', 'https://www.instagram.com/favicon.ico', [
       new Password(9, 8, 'app', 'Instagram', 'username', 'password')
