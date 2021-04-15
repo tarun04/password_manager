@@ -4,6 +4,7 @@ import 'package:password_manager/screens/account_details_screen.dart';
 import 'package:password_manager/screens/accounts_screen.dart';
 import 'package:password_manager/screens/checkup_screen.dart';
 import 'package:password_manager/screens/root.dart';
+import 'package:password_manager/screens/settings_screen.dart';
 import 'package:provider/provider.dart';
 
 const ACCOUNTS_SCREEN = 0;
@@ -22,6 +23,8 @@ class NavigationProvider extends ChangeNotifier {
     switch (settings.name) {
       case AccountDetailsScreen.route:
         return MaterialPageRoute(builder: (_) => AccountDetailsScreen());
+      case SettingsScreen.route:
+        return MaterialPageRoute(builder: (_) => SettingsScreen());
       default:
         return MaterialPageRoute(builder: (_) => Root());
     }
@@ -39,6 +42,8 @@ class NavigationProvider extends ChangeNotifier {
         switch (settings.name) {
           case AccountDetailsScreen.route:
             return MaterialPageRoute(builder: (_) => AccountDetailsScreen());
+          case SettingsScreen.route:
+            return MaterialPageRoute(builder: (_) => SettingsScreen());
           default:
             return MaterialPageRoute(builder: (_) => AccountsScreen());
         }
